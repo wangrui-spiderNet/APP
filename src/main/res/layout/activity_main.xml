@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/activity_main_relative"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:id="@+id/activity_main_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="Log out"
+            android:textColor="@color/colorAccent"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:maxEms="15"
+            android:singleLine="false"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/activity_main_input"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_et"/>
+
+        <Button
+            android:id="@+id/activity_main_send"
+            android:layout_margin="15dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_width="52dp"
+            android:layout_height="32dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/send_button"
+            android:text="Send"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="78dp"
+        android:layout_marginBottom="48dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/activity_main_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

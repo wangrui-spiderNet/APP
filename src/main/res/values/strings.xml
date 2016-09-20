@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Robot</string>
+    <string name="sign_in">Sign in</string>
+    <string name="login_text_two">with your App ID</string>
+    <string name="hint_username">App ID</string>
+    <string name="hint_password">Password</string>
+    <string name="sign_in_button">Sign In</string>
+    <string name="forgot_text">Forgot your App ID or password?</string>
+    <string name="create_text">Create an App ID</string>
+    <string name="help_info">Now , you can input your phone number,please take care , because ths phone number can help you find back your ID info . </string>
+</resources>
